@@ -539,6 +539,7 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\DangKyThanhCong.cshtml" />
+    <Content Include="Views\Layout\NguoiDungLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
