@@ -246,6 +246,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\DonHang\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\SanPham\" />
     <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
