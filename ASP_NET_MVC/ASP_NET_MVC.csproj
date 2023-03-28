@@ -154,6 +154,7 @@
     <Compile Include="Models\Don_Hang.cs">
       <DependentUpon>QuanLyBanHoaEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\Loai_San_Pham.cs">
       <DependentUpon>QuanLyBanHoaEntities.tt</DependentUpon>
     </Compile>
