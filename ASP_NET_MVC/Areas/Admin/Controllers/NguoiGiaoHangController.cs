@@ -27,12 +27,14 @@ namespace ASP_NET_MVC.Areas.Admin.Controllers
             }
         }
         [HttpGet]
+
         public ActionResult Create()
         {
 
             return View();
         }
         [HttpPost]
+
         public ActionResult Create(Nguoi_Giao_Hang ship, HttpPostedFileBase ImageUpload)
         {
             if (ImageUpload != null && ImageUpload.ContentLength > 0)
@@ -46,8 +48,6 @@ namespace ASP_NET_MVC.Areas.Admin.Controllers
             db.Nguoi_Giao_Hang.Add(ship);
             db.SaveChanges();
             return RedirectToAction("Index");
-
-
         }
         [HttpGet]
 

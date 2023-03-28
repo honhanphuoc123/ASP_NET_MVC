@@ -239,8 +239,6 @@
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Views\DonHang\" />
     <Folder Include="Areas\Admin\Views\Home\" />
-    <Folder Include="Areas\Admin\Views\LoaiSanPham\" />
-    <Folder Include="Areas\Admin\Views\NguoiGiaoHang\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
