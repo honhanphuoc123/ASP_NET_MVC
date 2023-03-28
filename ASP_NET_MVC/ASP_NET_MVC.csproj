@@ -544,11 +544,11 @@
     <Content Include="Views\LoaiSanPham\SanPhamTheoLoaiDuoi.cshtml" />
     <Content Include="Views\LoaiSanPham\_LoaiSanPham.cshtml" />
     <Content Include="Views\LoaiSanPham\_LoaiSanPhamDuoi.cshtml" />
+    <Content Include="Views\TimKiem\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Views\TimKiem\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
