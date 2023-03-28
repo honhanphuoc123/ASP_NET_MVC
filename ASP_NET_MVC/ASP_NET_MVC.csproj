@@ -216,6 +216,13 @@
     <Content Include="Areas\Admin\Views\DonHang\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPham\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Delete.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -246,10 +253,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\DonHang\" />
-    <Folder Include="Areas\Admin\Views\Home\" />
-    <Folder Include="Areas\Admin\Views\SanPham\" />
-    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
