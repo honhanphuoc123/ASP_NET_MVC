@@ -153,31 +153,31 @@ namespace ASP_NET_MVC.Controllers
             db.SaveChanges();
 
 
-            //string tb = "<html><body><table boder='1'><caption>Thông tin đặt hàng</caption><tr><th>STT</th><th>Số lượng</th><th>Đơn giá</th><th>Thành Tiền</th></tr>";
-            //int i = 0;
+            string tb = "<html><body><table boder='1'><caption>Thông tin đặt hàng</caption><tr><th>STT</th><th>Số lượng</th><th>Đơn giá</th><th>Thành Tiền</th></tr>";
+            int i = 0;
 
 
-            //foreach (var item in lst)
-            //{
-            //    i++;
-            //    tb += "<tr>";
-            //    tb += "<td>" + i.ToString() + "</td>";
-            //    tb += "<td>" + item.San_Pham.tenSP + "</td>";
-            //    tb += "<td>" + item.Quantity.ToString() + "</td>";
-            //    tb += "<td>" + item.San_Pham.gia.ToString() + "</td>";
-            //    tb += "<td>" + String.Format("{0:#,###}", item.Quantity * item.San_Pham.gia) + "</td>";
-            //    tb += "</tr>";
+            foreach (var item in lst)
+            {
+                i++;
+                tb += "<tr>";
+                tb += "<td>" + i.ToString() + "</td>";
+                tb += "<td>" + item.San_Pham.tenSP + "</td>";
+                tb += "<td>" + item.Quantity.ToString() + "</td>";
+                tb += "<td>" + item.San_Pham.gia.ToString() + "</td>";
+                tb += "<td>" + String.Format("{0:#,###}", item.Quantity * item.San_Pham.gia) + "</td>";
+                tb += "</tr>";
 
-            //}
-            //var tongtien = lst.Sum(n => n.Quantity * n.San_Pham.gia);
-            //tb += "<tr><th colpan='5'>Tổng Cộng: "
-            //    + String.Format("{0:#,### vnd}", tongtien) + "</th></tr></table>";
-            //MailMessage mail = new MailMessage("gammingdeath@gmail.com", email, "Thông tin đơn hàng", tb);
-            //SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-            //client.EnableSsl = true;
-            //client.Credentials = new NetworkCredential("gammingdeath", "@PHUOC#1");
-            //mail.IsBodyHtml = true;
-            //client.Send(mail);
+            }
+            var tongtien = lst.Sum(n => n.Quantity * n.San_Pham.gia);
+            tb += "<tr><th colpan='5'>Tổng Cộng: "
+                + String.Format("{0:#,### vnd}", tongtien) + "</th></tr></table>";
+            MailMessage mail = new MailMessage("gammingdeath@gmail.com", email, "Thông tin đơn hàng", tb);
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            client.EnableSsl = true;
+            client.Credentials = new NetworkCredential("gammingdeath", "@PHUOC#1");
+            mail.IsBodyHtml = true;
+            client.Send(mail);
             return RedirectToAction("DatHangThanhCong");
         }
 
