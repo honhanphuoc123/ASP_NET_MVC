@@ -58,7 +58,6 @@ namespace ASP_NET_MVC.Controllers
             return -1;
         }
 
-
         public JsonResult Update(string cartModel)
         {
             var jsonCart = new JavaScriptSerializer().Deserialize<List<GioHang>>(cartModel);
@@ -79,7 +78,6 @@ namespace ASP_NET_MVC.Controllers
             });
         }
 
-
         public JsonResult Remove(int id)
         {
             var cart = (List<GioHang>)Session["cart"];
@@ -92,7 +90,6 @@ namespace ASP_NET_MVC.Controllers
             });
         }
 
-
         [HttpGet]
         public ActionResult DatHang()
         {
@@ -100,6 +97,7 @@ namespace ASP_NET_MVC.Controllers
 
 
         }
+
         [HttpPost]
         public ActionResult DatHang(string ten, string SDT, string email, string diachi, string tieude)
         {
